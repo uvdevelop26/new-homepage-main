@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+/*=======General===========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 15px;
+}
+
+.heading {
+    padding: 25px 0 30px;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.container-main {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+
+
+
+
+/*=======Slider Modal===========*/
+.open-menu {
+    background: none;
+    border: none;
+    margin-left: auto;
+    margin-top: auto;
+    cursor: pointer;
+}
+
+.modal {
+    opacity: 0;
+    /* para que no se prenda el modal*/
+    visibility: hidden;
+    /* para que desaparezca de la pantalla*/
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.slider-modal {
+    background-color: white;
+    position: relative;
+    width: 60vw;
+    height: 100vh;
+    margin-left: auto;
+    transition: transform 0.8s;
+    transform: translateX(0%);
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebar-cerrar {
+    transform: translateX(100%);
+}
+
+.close-container {
+    text-align: right;
+    padding: 25px;
+}
+
+.navbar-list {
+    padding: 60px 20px;
+    list-style: none;
+}
+
+.navbar-list>li {
+    padding: 15px 0;
+
+}
+
+.navbar-list>li>a {
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+    font-weight: 400;
+}
+
+@media(min-width: 740px) {
+    .heading-main {
+        display: grid;
+        grid-auto-flow: column;
+        padding: 20px 0;
+    }
+
+    .heading {
+        padding: 10px 0 20px;
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .open-menu {
+        display: none;
+    }
+
+    .close-container {
+        display: none;
+    }
+
+    .modal {
+        opacity: 1;
+        /* para que no se prenda el modal*/
+        visibility: visible;
+        /* para que desaparezca de la pantalla*/
+        width: 100%;
+        height: 100%;
+        z-index: inherit;
+        position: static;
+        background: rgba(0, 0, 0, 0.5);
+        /* top: 0;
+        left: 0; */
+        /* position: fixed; */
+    }
+
+    .slider-modal {
+        position: static;
+        width: 100%;
+        height: 100%;
+        margin-left: none;
+        transition: none;
+        transform: none;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        padding: 0 18px;
+    }
+
+    .navbar-list {
+        padding: 5px 5px;
+        list-style: none;
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: right;
+
+
+
+    }
+
+    .navbar-list>li {
+        padding-left: 35px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        text-align: right;
+
+
+    }
+
+    .navbar-list>li>a {
+        text-decoration: none;
+        color: hsl(240, 100%, 5%);
+        font-weight: 400;
+    }
+}
+
+/*==========Section A==============*/
+
+.title {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.paragraph {
+    color: hsl(236, 13%, 42%);
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.img-desk-container {
+    width: 100%;
+}
+
+.img-desk {
+    width: 100%;
+}
+
+
+.read-buttom {
+    border: none;
+    background: hsl(5, 85%, 63%);
+    padding: 10px 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+/*==========Section B==============*/
+
+.black-box {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px;
+    background: hsl(240, 100%, 5%);
+}
+
+.black-box>h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 1.5rem;
+}
+
+.info-box {
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+}
+
+.border-gray {
+    border-bottom: .5px solid hsl(233, 8%, 79%)
+}
+
+.info-box>h3 {
+    color: hsl(36, 100%, 99%);
+}
+
+.info-box>p {
+    color: hsl(233, 8%, 79%);
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+/*==========Section C==============*/
+
+.items-container {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: left;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.img-container {
+    width: 110px;
+}
+
+.items-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.items {
+    padding-left: 20px;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+.items>.number {
+    font-size: 1.7rem;
+    color: hsl(233, 8%, 79%);
+    font-weight: bold;
+}
+
+.items>.items-tittle {
+    padding: 10px 0;
+}
+
+.items>p {
+    color: hsl(236, 13%, 42%)
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
+/* @media(min-width:500px ) and (max-width:1100px){
+    
+} */
+
+
+@media(min-width: 750px) {
+    .section-one {
+        margin-right: 5px;
+    }
+
+    .section-two {
+        margin-left: 5px;
+    }
+
+    .side-spacing {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+
+    .container {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .title {
+        padding: 35px 0;
+    }
+
+    .box {
+        padding: 35px 0;
+    }
+
+    .black-box {
+        max-width: 330px;
+        margin-top: auto;
+    }
+
+    .width-full {
+        max-height: 300px;
+    }
+
+    .img-desk-container {
+        width: 100%;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .section-three {
+        display: grid;
+        grid-auto-flow: column;
+    }
+}
+
+@media(min-width: 1100px) {
+    .container-main {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .section-one {
+        margin-right: 15px;
+    }
+
+    .section-two {
+        margin-left: 15px;
+       
+    }
+
+    .section-three{
+        padding-top: 10px;
+    }
+    .slider-modal {
+        position: static;
+        width: 100%;
+        height: 100%;
+        margin-left: none;
+        transition: none;
+        transform: none;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        padding: 0 0;
+    }
+   
+}
