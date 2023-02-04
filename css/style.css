@@ -88,6 +88,9 @@
     color: hsl(240, 100%, 5%);
     font-weight: 400;
 }
+.navbar-list>li>a:hover {
+    color: hsl(5, 85%, 63%);
+}
 
 @media(min-width: 740px) {
     .heading-main {
@@ -145,8 +148,6 @@
         grid-auto-flow: column;
         justify-content: right;
 
-
-
     }
 
     .navbar-list>li {
@@ -154,7 +155,6 @@
         padding-top: 9px;
         padding-bottom: 9px;
         text-align: right;
-
 
     }
 
@@ -197,6 +197,10 @@
     font-weight: 700;
     letter-spacing: 5px;
 }
+.read-buttom:hover {   
+    background: hsl(240, 100%, 5%);
+    color: white;
+}
 
 /*==========Section B==============*/
 
@@ -226,6 +230,10 @@
     color: hsl(36, 100%, 99%);
 }
 
+.info-box>h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
 .info-box>p {
     color: hsl(233, 8%, 79%);
     padding-top: 10px;
@@ -250,6 +258,7 @@
 .items-img {
     width: 100%;
     object-fit: cover;
+
 }
 
 .items {
@@ -268,6 +277,9 @@
 .items>.items-tittle {
     padding: 10px 0;
 }
+.items>.items-tittle:hover {
+    color:  hsl(5, 85%, 63%);
+}
 
 .items>p {
     color: hsl(236, 13%, 42%)
@@ -283,6 +295,7 @@
 
 
 @media(min-width: 750px) {
+    
     .section-one {
         margin-right: 5px;
     }
@@ -320,9 +333,15 @@
 
     .img-desk-container {
         width: 100%;
-        height: 320px;
+        height: 300px;
         overflow: hidden;
     }
+    .img-desk {
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
 
     .section-three {
         display: grid;
@@ -332,7 +351,7 @@
 
 @media(min-width: 1100px) {
     .container-main {
-        max-width: 1300px;
+        max-width: 1100px;
         margin: 0 auto;
     }
 
@@ -342,23 +361,27 @@
 
     .section-two {
         margin-left: 15px;
-       
+
     }
 
-    .section-three{
+    .section-three {
         padding-top: 10px;
     }
+
     .slider-modal {
-        position: static;
-        width: 100%;
-        height: 100%;
-        margin-left: none;
-        transition: none;
-        transform: none;
-        display: grid;
-        grid-auto-flow: column;
-        align-items: center;
-        padding: 0 0;
+        padding: 0 0px;
     }
-   
+
+    .navbar-list>li>a {
+        text-decoration: none;
+        color: hsl(236, 13%, 42%);
+        font-weight: 400;
+    }
+
+  /*   .title{
+        padding-right: 200px;
+        padding-top: 20px;
+    }
+ */
+
 }
